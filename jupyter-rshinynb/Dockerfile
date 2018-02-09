@@ -55,6 +55,9 @@ RUN $CONDA_DIR/bin/conda install -c conda-forge --quiet --yes \
     'nb_conda_kernels' \
     'ipykernel' \
     'ipywidgets' \
+    'ipyleaflet' \
+    'bqplot' \
+    'appmode' \
     && $CONDA_DIR/bin/conda env create --file ${BUILD_FILES}/environment.yml \
     && $CONDA_DIR/bin/conda clean -tipsy
 
